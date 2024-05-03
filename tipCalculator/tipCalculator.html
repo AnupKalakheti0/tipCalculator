@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tipCalculator.css">
+</head>
+<body>
+    <div class="heading">
+        <h1> Tip Calculator By Anup </h1>
+    </div>
+    <div class="tipCalculator">
+        <div class="container">
+            <div class="title"> Bill Total</div>
+            <div class="inputContainer">
+                <input 
+                id="billTotalInput"
+                type="text"
+                placeholder="$0.00"
+                onkeyup="calculateBill()">
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="title"> Tip</div>
+            <div class="inputContainer">
+                <input 
+                id="tipInput"
+                type="text"
+                placeholder="$0.00"
+                onkeyup="calculateBill()">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="flexContainer">
+                <div class="title"> People</div>
+                <div class="title"> Total Per Person</div>
+            </div>
+            <div class="flexContainer">
+                <div class="buttonContainer">
+                    <button onclick="increasePeople()">
+                        <span class="buttonText"> + </span> 
+                    </button>
+                    <span id="numberOfPeople"> 1 </span>
+                    <button onclick="decreasePeople()"> <span class="buttonText"> - </span> </button>
+                </div>
+                <div class="totalPerPerson">
+                    <span id="perPersonTotal"> $ 0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="tipCalculator.js"></script>
+</body>
+</html>

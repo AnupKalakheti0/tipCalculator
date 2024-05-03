@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: brown;
+    height: 100vh;
+    width: 100%;    
+}
+
+.heading {
+    margin: 60px 0px 0px 33%;
+}
+
+.tipCalculator {
+    height: 60vh;
+    width: 25%;
+    background-color: rgb(115, 25, 25);
+    margin: 10vh 33%;
+    padding: 50px 30px;
+}
+
+.title {
+    color: white;
+    font-size: 22px;
+    margin: 20px 0px;
+}
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 95%;
+    height: 4vh;
+    border-radius: 9px;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(151, 32, 32);
+}
+
+button {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    border: none;
+}
+.buttonText {
+    font-size: 18px;
+
+}
+
+#numberOfPeople {
+    font-size: 22px;
+    color: white;
+    margin: 0px 5px;
+}
+
+#perPersonTotal {
+    color: wheat;
+    font-size: 30px;
+    font-weight: 600;
+}
